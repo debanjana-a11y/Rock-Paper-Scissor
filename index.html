@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Play Rock Paper Scissors</h1>
+    </header>
+    <main>
+        <div class="scoreboard">
+            <div class="heading">
+                Scoreboard
+            </div>
+            <div class="scores">
+                <div class="player_score">
+                    0
+                </div>
+                <div class="marginal">
+                    :
+                </div>
+                <div class="compute_score">
+                    0
+                </div>
+            </div>
+            <div class="announcement">
+                Start the game !
+            </div>
+        </div>
+    
+        <div class="options">
+            <div class="option_1">
+                <img onclick="game(0)" src="./images/rock_icon.png" alt="image of Rock hand posture">
+                <div>Rock</div>
+            </div>
+            <div class="option_2">
+                <img onclick="game(1)" src="./images/paper_icon.png" alt="image of Paper hand posture">
+                <div>Paper</div>
+            </div>
+            <div class="option_3">
+                <img onclick="game(2)" src="./images/scissor_icon.png" alt="image of scissors hand posture">
+                <div>Scissors</div>
+            </div>
+        </div>
+    
+        <div class="dashboard">
+            <div class="heading">
+                Dashboard
+            </div>
+            <div class="history">
+                <div class="player's selection">
+                    <div class="player_name">Player</div>
+                    <div class="options"></div>
+                </div>
+                <div class="computer's selection">
+                    <div class="player_name">Computer</div>
+                    <div class="options"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>Copyright &copy, Made by Debanjana 2022</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
