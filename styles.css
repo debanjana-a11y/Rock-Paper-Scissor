@@ -5,6 +5,7 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -23,6 +24,7 @@ header {
 main {
     padding: 3vmin;
     font-size: 2em;
+    flex: 1;
 }
 
 main > div {
@@ -46,6 +48,7 @@ main > div {
 .options {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .options > div {
@@ -74,8 +77,19 @@ img:hover {
     transform: scale(1.2);
 }
 
+.player_1, .player_2 {
+    text-decoration: underline;
+}
+
+.dashboard p {
+    font-size: smaller;
+    color: purple;
+    text-decoration: none;
+}
+
 footer {
     background-color: violet;
+    padding: 10px;
     color: blue;
     font-weight: bold;
     font-size: 1.2em;
