@@ -1,6 +1,7 @@
 const options = ['Rock', 'Paper', 'Scissors'];
 var player_score = document.getElementsByClassName("player_score")[0].innerHTML;
 var computer_score = document.getElementsByClassName("compute_score")[0].innerHTML;
+var selections = document.querySelectorAll("img");
 
 const resetScoreAndDash = () => {
     if (player_score + computer_score === 5) {
@@ -99,3 +100,9 @@ const game = (number) => {
         document.getElementsByClassName("announcement")[0].innerHTML = message;
     }
 }
+
+selections.forEach(selection => {
+    selection.addEventListener('click', function() {
+        game(parseInt(selection.id));
+    })
+});
